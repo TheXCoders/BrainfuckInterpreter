@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <limits>
+#include <algorithm> 
 
 void correctOverflow(char &c, char op) {
     /* Correct value of the character */
