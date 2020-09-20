@@ -89,7 +89,7 @@ void brainFuck(std::string &code, char op) {
                 case '<': if (ptr > 0) ptr--; break;
                 case '+': correctOverflow(tab[ptr], '+'); break;
                 case '-': correctOverflow(tab[ptr], '-'); break;
-                case '.': std::cout << tab[ptr] << std::endl; break;
+                case '.': std::cout << tab[ptr]; break;
                 case ',': readInput(tab[ptr]); break;
                 case '[': analyseLoopAtStart(ptrCode, code, tab[ptr], arrayLoop); break;
                 case ']': ptrCode = arrayLoop[arrayLoop.size()-1].first-1; break;
